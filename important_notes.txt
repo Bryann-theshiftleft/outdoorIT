@@ -1,0 +1,9 @@
+Notes:
+  - This is a tutorial project
+  - Need to achieve:
+	- learn ionic mobile framework
+	- Basic login module
+	- Basic Registration Module
+	- Will use firebase
+	- Registration and login using Social Media Account
+	- Basic CRUD
