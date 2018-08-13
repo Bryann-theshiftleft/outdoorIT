@@ -1,7 +1,0 @@
-{
-  "name": "ionicTemplateSuper",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "ionic-angular"
-}
