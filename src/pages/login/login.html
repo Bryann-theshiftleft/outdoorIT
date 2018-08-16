@@ -19,16 +19,16 @@
 
 	  <ion-item>
 	    <ion-label floating>Username</ion-label>
-	    <ion-input type="text"></ion-input>
+	    <ion-input type="text" #username></ion-input>
 	  </ion-item>
 
 	  <ion-item>
 	    <ion-label floating>Password</ion-label>
-	    <ion-input type="password"></ion-input>
+	    <ion-input type="password" #password></ion-input>
 	  </ion-item>
 
 	  <ion-item>
-	  	<button ion-button color="secondary">LOGIN</button>
+	  	<button ion-button color="secondary" (click)="signIn();">LOGIN</button>
 	  </ion-item>
 
 	</ion-list>

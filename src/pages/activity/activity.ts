@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the MembersPage page.
+ * Generated class for the ActivityPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,20 +10,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-members',
-  templateUrl: 'members.html',
+  selector: 'page-activity',
+  templateUrl: 'activity.html',
 })
-export class MembersPage {
+export class ActivityPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  popGoBackThis() {
-  	this.navCtrl.pop();
-  }
-
   ionViewDidLoad() {
-    console.log('ionViewDidLoad MembersPage');
+    console.log('ionViewDidLoad ActivityPage');
   }
 
 }
