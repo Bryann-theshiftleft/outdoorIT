@@ -2,6 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, AlertController, NavParams } from 'ionic-angular';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { HomePage } from '../home/home';
+import { TabsPage } from '../tabs/tabs';
 
 /**
  * Generated class for the LoginPage page.
@@ -37,7 +38,7 @@ export class LoginPage {
   	.then(data => {
   		console.log('got some data', data);
   		this.alert('Success! You are now logged in');
-  		this.navCtrl.setRoot( HomePage );
+  		this.navCtrl.setRoot( TabsPage );
   		//user has login
   	})
   	.catch (error => {
@@ -54,6 +55,10 @@ export class LoginPage {
 	    });
 	    alert.present();
   	}*/
+  }
+
+  signUp() {
+    
   }
 
   ionViewDidLoad() {

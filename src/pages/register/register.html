@@ -1,5 +1,5 @@
 <!--
-  Generated template for the LoginPage page.
+  Generated template for the RegisterPage page.
 
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>login</ion-title>
+    <ion-title>register</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -28,8 +28,17 @@
 	  </ion-item>
 
 	  <ion-item>
-	  	<button ion-button color="secondary" (click)="signIn();">LOGIN</button>
-	  	<button ion-button color="primary" (click)="signUp();">SIGN UP</button>
+	    <ion-label floating>Full Name</ion-label>
+	    <ion-input type="text" #username></ion-input>
+	  </ion-item>
+
+	  <ion-item>
+	    <ion-label floating>Birthdate</ion-label>
+	    <ion-input type="password" #password></ion-input>
+	  </ion-item>	  
+
+	  <ion-item>
+	  	<!-- <button ion-button color="secondary" (click)="addUser();">REGISTER</button> -->
 	  </ion-item>
 
 	</ion-list>
