@@ -5,11 +5,12 @@ import { MyApp } from './app.component';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 
-import { AboutPage } from '../pages/about/about';
-import { ContactPage } from '../pages/contact/contact';
+//import { AboutPage } from '../pages/about/about';
+//import { ContactPage } from '../pages/contact/contact';
+import { RegisterPage } from '../pages/register/register';
 import { HomePage } from '../pages/home/home';
 import { MembersPage } from '../pages/members/members';
-import { LoginPage } from '../pages/login/login';
+import { LoginPage } from '../pages/login/login'; 
 import { ActivityPage } from '../pages/activity/activity';
 import { TabsPage } from '../pages/tabs/tabs';
 
@@ -28,8 +29,9 @@ const firebaseAuth = {
 @NgModule({
   declarations: [
     MyApp,
-    AboutPage,
-    ContactPage,
+    //AboutPage,
+    //ContactPage,
+    RegisterPage,
     HomePage,
     MembersPage,
     LoginPage,
@@ -45,8 +47,9 @@ const firebaseAuth = {
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    AboutPage,
-    ContactPage,
+    //AboutPage,
+    //ContactPage,
+    RegisterPage,
     HomePage,
     MembersPage,
     LoginPage,

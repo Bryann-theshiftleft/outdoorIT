@@ -2,6 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, AlertController, NavParams } from 'ionic-angular';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { HomePage } from '../home/home';
+import { RegisterPage } from '../register/register';
 import { TabsPage } from '../tabs/tabs';
 
 /**
@@ -45,7 +46,7 @@ export class LoginPage {
   		console.log('got some error', error);
   		this.alert(error.message);
   		//error login
-  	})
+  	});
 
   	/*if(this.uname.value == 'admin' && this.pword.value == 'abc123') {
 	    const alert = this.alertCtrl.create({
@@ -57,8 +58,8 @@ export class LoginPage {
   	}*/
   }
 
-  signUp() {
-    
+  openSignUpPage() {
+    this.navCtrl.push(RegisterPage);
   }
 
   ionViewDidLoad() {
